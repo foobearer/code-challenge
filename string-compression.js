@@ -16,3 +16,7 @@ function compress(str) {
     var arrToStr = String(items);
     return arrToStr.replace(/,/g,"")	
 }
+
+//INPUT: "aaaabbaaaababbbcccccccccccc"
+//PROCESS: compress("aaaabbaaaababbbcccccccccccc")
+//OUTPUT: "4a2b4a1b1a3b12c"
