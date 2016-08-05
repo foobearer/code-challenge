@@ -1,10 +1,6 @@
-var input = document.getElementById('ptext'),
-ul = document.getElementById('todo-ul'),
-warning = document.getElementById('warning'),
-todoCounter = document.getElementById('todo-counter'),
-inprogCounter = document.getElementById('inprog-counter'),
-doneCounter = document.getElementById('done-counter'),
-projTot = document.getElementById('gtotal'),
+var input = e('ptext'), ul = e('todo-ul'), warning = e('warning'),
+todoCounter = e('todo-counter'), inprogCounter = e('inprog-counter'),
+doneCounter = e('done-counter'), projTot = e('gtotal'),
 li, items = [];
 
 function enterProjectName(e) {
@@ -24,15 +20,9 @@ function addInputValToList() {
   addDraggablePropsToLi()
 }
 
-function clearInputField() {
-  input.value = ""
-}
-
 function checkInputVal() {
   if (input.value == " " || input.value == null || input.value === "" ) {
-    warning.style.color = "red"
-    warning.style.fontSize = "16px"
-    warning.style.display = ""
+    warning.className = "warning"
     warning.innerHTML = "PLEASE ENTER A VALID ITEM"	
     setTimeout(function(){
       warning.style.display = "none"
@@ -50,12 +40,20 @@ function countItemArray(item) {
 }
 
 function countListUl() {
-  var todo = document.getElementById("todo-ul").getElementsByTagName("li"),
-  inprog = document.getElementById("inprogress-ul").getElementsByTagName("li"),
-  done = document.getElementById("done-ul").getElementsByTagName("li");
+  var todo = e("todo-ul").getElementsByTagName("li"),
+  inprog = e("inprogress-ul").getElementsByTagName("li"),
+  done = e("done-ul").getElementsByTagName("li");
   todoCounter.innerHTML = todo.length + " Projects"
   inprogCounter.innerHTML = inprog.length + " Projects"
   doneCounter.innerHTML = done.length + " Projects"
+}
+
+function clearInputField() {
+  input.value = ""
+}
+
+function e(id) {
+  return document.getElementById(id);
 }
 
 //Inprogress
