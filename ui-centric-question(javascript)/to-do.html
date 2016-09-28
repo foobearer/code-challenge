@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>todo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="to-do.css">
+</head>
+<body>
+	<div id="main-box">
+		<h3 id="warning"></h3>
+		<div id="gtotal"></div>
+		<input type="text" id="ptext" placeholder="Enter Project Name" onkeyup="enterProjectName(event)">
+		<div class="container">
+			<div id="todo" class="box">
+				<h4 id="todoh4" onclick="sortList(this.id)">To Do</h4> <div id="todo-counter" class="counter"></div>
+				<ul id="todo-ul" ondrop="drop(event)" ondragover="allowDrop(event)"></ul>
+			</div>
+			<div id="in-progress" class="box">
+				<h4>In Progress</h4> <div id="inprog-counter" class="counter"></div>
+				<ul id="inprogress-ul" ondrop="drop(event)" ondragover="allowDrop(event)"></ul>
+			</div>
+			<div id="done" class="box">
+				<h4>Done</h4> <div id="done-counter" class="counter"></div>
+				<ul id="done-ul" ondrop="drop(event)" ondragover="allowDrop(event)"></ul>
+			</div>
+		</div>
+	</div>
+	<script src="to-do.js"></script>
+</body>
+</html>

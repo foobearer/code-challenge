@@ -1,0 +1,77 @@
+body {
+	font-family: 'Helvetica';
+}
+#main-box {
+	width: 1000px;
+	height: 1000px;
+	margin: 0px auto; 
+	padding: 50px;
+	background-color: #f2f2f2;
+	text-align: center;
+
+}
+#ptext {
+	margin: 20px auto!important;
+	margin-left: 150px !important;
+	height: 25px;
+	width: 300px;
+	padding: 5px;
+	font-size: 14px;
+}
+.container {
+	height: 500px;
+	display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.box {
+	width: 300px;
+	height: auto;
+	padding: 0px !important;
+	margin-top: 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h4 {
+	background-color: black;
+	color: #fff;
+	height: 40px;
+	padding: 10px;
+	margin: 0px;
+}
+.counter {
+  margin-top: -27px;
+  color: #ccccb3;
+  text-align: center;
+  font-size: 13px;
+}
+ul {
+	height: 500px;
+	list-style: none;
+	vertical-align: middle;
+	text-align: center;
+	margin: 10px auto;
+	padding: 0px !important;
+}
+li {
+	border-bottom: 2px solid #bfbfbf;
+	text-align: left;
+	padding: 10px;
+	margin-top: 0px;
+}
+#gtotal {
+	width: 150px;
+	height: 60px;
+	background-color: black;
+	color: #fff;
+	font-size: 20px;
+	float: right;
+	margin-top: -30px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+.warning {
+	color: red;
+	font-size: 16px;
+	display: normal;
+}
